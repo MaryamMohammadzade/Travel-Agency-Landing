@@ -1,0 +1,937 @@
+body {
+	min-height: 100vh;
+	padding: 0%;
+	margin: 0%;
+}
+
+
+a,
+span,
+p {
+	line-height: 150%;
+	padding: 0;
+	margin: 0%;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+main {
+	margin-top: -120px;
+}
+
+/* Header */
+.header {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 0px;
+	padding: 40px 190px 0 190px;
+	z-index: 2;
+	background: transparent;
+
+}
+
+.header-menu {
+	display: flex;
+	gap: 60px;
+	padding: 10px;
+}
+
+.header-menu a {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+/* 1-) Hero-Section */
+.hero-section {
+	background-image: url("../images/hero-image-background.png");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.content {
+	padding: 237px 70px 0 0px;
+	max-width: 50%;
+	align-self: end;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	color: white;
+	text-align: left;
+	margin-bottom: 217px;
+}
+
+.content h1 {
+	font-size: 70px;
+	font-weight: 700;
+}
+
+.content p {
+	max-width: 752px;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+/* 2-) Plan-Travel */
+.plan-travel {
+	width: 100%;
+	min-height: 254px;
+	background-color: #000000B2;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 64px;
+}
+
+.plan-travel h2 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.plan-form {
+	display: flex;
+	gap: 21px;
+	align-items: end;
+
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form-group input {
+	padding: 0 14px;
+	width: 173px;
+	height: 46px;
+	border-radius: 8px;
+	color: #999999;
+}
+
+.btn-submit {
+	background-color: #17C3B2;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 50px;
+	width: 209px;
+	min-height: 50px;
+	text-align: center;
+}
+
+/* 3-) Tour-Types */
+.tour-types {
+	background-color: #17C3B2;
+
+	padding: 70px 190px;
+}
+
+.tour-types span {
+	color: #0E3D4D;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.tour-types h2 {
+	color: white;
+	font-size: 50px;
+	font-weight: 600;
+	margin: 0%;
+	line-height: 150%;
+}
+
+.tour-type-content p {
+	color: #073D37;
+	font-size: 20px;
+	font-weight: 400;
+	padding-right: 188px;
+
+}
+
+.tour-type-items {
+	margin-top: 58px;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.tour-type-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.tour-type-box img {
+	min-height: 85px;
+}
+
+.tour-type-box span {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+}
+
+.tour-type-details {
+	color: #073D37;
+	font-size: 20px;
+	font-weight: 400;
+	max-width: 252px;
+	padding: 8px 16px;
+
+
+}
+
+/* 4-) Where-To-Go */
+
+.where-to-go,
+.exploring,
+.best-offers,
+.happy-clients {
+	background-color: white;
+	padding: 70px 190px;
+}
+
+.where-to-go-content>span,
+.exploring-content>span,
+.best-offers-content>span {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.where-to-go h2,
+.exploring h2,
+.best-offers h2,
+.happy-clients h2 {
+	color: #333333;
+	font-size: 50px;
+	font-weight: 600;
+	margin: 0%;
+	line-height: 150%;
+}
+
+.where-to-go>p {
+	color: #333333;
+	font-size: 20px;
+	font-weight: 400;
+	padding-right: 188px;
+}
+
+
+.cards {
+	position: relative;
+	margin-top: 56px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	padding-bottom: 58px;
+}
+
+
+/* Cards */
+.cards {
+	margin-top: 56px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	padding-bottom: 58px;
+}
+
+.card {
+	border-radius: 16px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	background: #fff;
+}
+
+.card img {
+	border-radius: 16px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.card-info {
+	background-color: transparent;
+	padding-bottom: 32px;
+	z-index: 1;
+	margin-top: -188px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.card-info h3 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 400;
+
+}
+
+.blue-text {
+	color: #17C3B2;
+}
+
+/* BLOG */
+.exploring-content,
+.best-offers-content,
+.happy-clients-content {
+	margin-bottom: 50px;
+}
+
+.blog-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+
+.main-blog img {
+	width: 100%;
+	height: 370px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.main-blog-info {
+	padding: 15px 0;
+}
+
+.main-blog-info>h3 {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 150%;
+	padding-bottom: 8px;
+}
+
+.main-blog-info>p {
+	font-size: 20px;
+
+}
+
+.tag {
+	text-transform: uppercase;
+	color: #0ea5a3;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.side-blogs {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.side-post {
+	display: flex;
+	gap: 15px;
+}
+
+.side-post-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.side-post-details>p {
+	font-size: 18px;
+}
+
+.side-post img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.date {
+	font-size: 12px;
+	color: #17C3B2;
+}
+
+/* OFFERS */
+.best-offers {
+	padding-bottom: 130px;
+}
+
+.best-offers-cards {
+	display: grid;
+	gap: 30px;
+}
+
+.offer-price {
+	font-size: 36px;
+	font-weight: 700;
+	color: white;
+}
+
+.offers-row-1 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 30px;
+}
+
+.offers-row-2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.offer-card img {
+	width: 100%;
+	height: 100%;
+	max-height: 480px;
+	border-radius: 16px;
+	object-fit: cover;
+}
+
+.offer-details {
+	margin-top: -100px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #17C3B2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 28px;
+}
+
+/* HAPPY CLIENTS */
+.clients-review {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.client {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	max-width: 500px;
+	background-image: url("./assets/images/bg.png");
+	text-align: center;
+}
+
+.clients-review {
+	display: flex;
+	gap: 30px;
+	padding-bottom: 20px;
+}
+
+.client {
+	min-width: 45%;
+	padding: 25px;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-position: left 20px top 90px;
+	scroll-snap-align: start;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.client img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.client p {
+	line-height: 1.6;
+	color: #555;
+}
+
+.client-info p {
+	color: #333333;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.client-info span {
+	font-size: 18px;
+	color: #777;
+}
+
+.stars-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+
+}
+
+.stars {
+	color: #ffb400;
+	font-size: 34px;
+	line-height: 1;
+}
+
+.yellow {
+	color: #ffb400;
+}
+
+.gray {
+	color: #ccc;
+}
+
+.rating-value {
+	color: #333;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.pagination {
+	margin-top: 18px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.pagination span {
+	width: 10px;
+	height: 10px;
+	background: #c9d7ff;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.pagination .active {
+	background: #17C3B2;
+}
+
+
+/*footer*/
+footer {
+	padding: 64px 200px 0px 200px;
+}
+
+.main-footer {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+	gap: 80px;
+	padding: 63px 0 70px 0;
+}
+
+.help {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.help p {
+	font-size: 16px;
+	color: #666666;
+}
+
+.help span {
+	font-size: 22px;
+	font-weight: 500;
+	color: #17C3B2;
+}
+
+.copy-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: #17C3B2 solid 1px;
+	padding: 24px 0px;
+}
+
+.copy-right p {
+	font-size: 14px;
+	color: #17C3B2;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer-menu a {
+	color: #777;
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.medias {
+	margin-top: 8px;
+	display: flex;
+	gap: 4px;
+}
+
+.medias img {
+	max-width: 24px;
+	max-height: 24px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.footer-menu a:hover {
+	color: #17C3B2;
+}
+
+.footer-logo-mobile {
+	display: none;
+}
+
+/* GENERAL*/
+
+.tour-types h2::before,
+.where-to-go h2::before,
+.exploring h2::before,
+.best-offers h2::before,
+.happy-clients h2::before {
+	content: "";
+	display: inline-block;
+	width: 70px;
+	height: 2px;
+	background-color: #32B2A6;
+	margin-right: 8px;
+	vertical-align: middle;
+	margin-left: -78px;
+}
+
+.tour-types h2::before {
+	background-color: #0E3D4D;
+}
+
+.read-more {
+	margin-top: 28px;
+	color: #17C3B2;
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	justify-self: end;
+	gap: 5px;
+}
+
+.read-more .arrow {
+	font-size: 16px;
+}
+
+.read-more:hover {
+	text-decoration: underline;
+}
+
+
+/*RESPONSIVE*/
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+	.header {
+		padding: 30px 60px;
+	}
+
+	.header-menu {
+		gap: 30px;
+	}
+
+	.content {
+		max-width: 70%;
+		padding: 180px 40px 0 0;
+	}
+
+	.content h1 {
+		font-size: 48px;
+	}
+
+	.plan-form {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.tour-types {
+		padding: 60px 60px;
+	}
+
+	.tour-type-items {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.blog-container {
+		grid-template-columns: 1fr;
+	}
+
+	.offers-row-1 {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.offers-row-2 {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.clients-review {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.client {
+		min-width: 90%;
+	}
+
+	.main-footer {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
+	}
+}
+
+/* Mobile (max-width: 768px)*/
+@media (max-width: 768px) {
+	.header {
+		padding: 20px 30px;
+	}
+
+	.header-menu {
+		display: none;
+	}
+
+	.content {
+		max-width: 100%;
+		padding: 140px 20px 0 20px;
+		text-align: center;
+	}
+
+	.content h1 {
+		font-size: 36px;
+	}
+
+	.content p {
+		font-size: 18px;
+	}
+
+	.plan-travel h2 {
+		font-size: 30px;
+		align-self: baseline;
+	}
+
+	.plan-form {
+		flex-direction: column;
+		width: 100%;
+		gap: 16px;
+		align-items: stretch;
+	}
+
+	.plan-travel {
+		width: auto;
+		padding: 40px;
+	}
+
+	.btn-submit {
+		width: 100%;
+	}
+
+	.tour-types {
+		padding: 40px 20px;
+
+	}
+
+	.tour-type-items {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.where-to-go {
+		padding: 40px 20px;
+	}
+
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	/* BLOG */
+	.blog-container {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		padding-bottom: 40px;
+	}
+
+	.best-offers,
+	.exploring,
+	.happy-clients {
+		padding: 40px 20px;
+	}
+
+	.offers-row-1,
+	.offers-row-2 {
+		grid-template-columns: 1fr !important;
+	}
+
+	.offer-card img {
+		height: 322px;
+	}
+
+	.offer-price {
+		font-size: 16px;
+	}
+
+	.offer-details p {
+		font-size: 16px;
+	}
+
+	.clients-review {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	footer {
+		padding: 40px 20px;
+		background-color: #073D37;
+		display: grid;
+		justify-content: center;
+
+	}
+
+	.main-footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 0 60px 0;
+	}
+
+	.main-footer h4 {
+		color: #17C3B2;
+	}
+
+	.copy-right {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.footer-menu a,
+	.main-footer p {
+		color: #ffff;
+	}
+
+	.footer-logo-desktop {
+		display: none;
+	}
+
+	.footer-logo-mobile {
+		display: block;
+		max-height: 20px;
+	}
+
+	.copy-right {
+		border: none;
+		padding: 0%;
+	}
+
+	.copy-right p {
+		display: none;
+	}
+
+	.help {
+		grid-column: 1 / -1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.no-2,
+	.no-3,
+	.no-4 {
+		display: none;
+	}
+
+	.read-more {
+		margin-top: 10px;
+	}
+
+	.tour-type-content p {
+		padding: 0;
+	}
+
+	.tour-types h2::before,
+	.where-to-go h2::before,
+	.exploring h2::before,
+	.best-offers h2::before,
+	.happy-clients h2::before {
+		display: none;
+	}
+
+	.form-group input {
+		width: auto;
+	}
+
+	.offer-price {
+		font-size: 16px;
+	}
+
+	.offer-card {
+		margin-bottom: 30px;
+	}
+}
+
+.where-to-go h2,
+.exploring h2,
+.best-offers h2,
+.happy-clients h2 {
+	font-size: 35px;
+}
+
+.side-post-details>p {
+	font-size: 15px;
+}
+
+.exploring-content>span,
+.best-offers-content>span,
+.happy-clients-content>span {
+	font-size: 20px;
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+	.best-offers,
+	.exploring,
+	.happy-clients {
+		padding: 20px;
+	}
+
+	.main-blog {
+		margin-bottom: 50px;
+	}
+
+	.offer-details {
+		margin-top: -80px;
+	}
+
+	.content h1 {
+		font-size: 30px;
+	}
+
+	.tour-type-title {
+		font-size: 28px;
+	}
+
+	.card-info h3 {
+		font-size: 26px;
+	}
+
+
+}

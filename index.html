@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+
+          <img src="./assets/images/Logo.png" alt="logo" class="logo">
+
+          <nav class="header-menu">
+            <a href="#">Home</a>
+            <a href="#">Tour</a>
+            <a href="#">Blog</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+          </nav>
+
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="content">
+                <h1>Welcome to the World of Extraordinary Travel</h1>
+                <p>
+                    If you're searching for exciting adventures, unforgettable experiences, and 
+                    breathtaking places, you're in the right place!
+                </p>
+            </div>
+
+            <div class="plan-travel">
+                <h2>Plan your travel now!</h2>
+
+                <form class="plan-form" action="#" method="GET" role="search" aria-label="Plan trip form">
+                    <div class="form-group">
+                        <label for="destination">Search Destination*</label>
+                        <input id="destination" name="destination" type="text" placeholder="Enter Destination" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkin">Pax Number*</label>
+                        <input id="travelers" name="travelers" type="number" min="1" max="20" placeholder="No of peaple" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkout">Checkin Date*</label>
+                        <input id="checkout" name="checkout" type="date" placeholder="MM / DD / YYYY" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travelers">Checkout Date*</label>
+                        <input id="checkin" name="checkin" type="date" placeholder="MM / DD / YYYY" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">SEARCH</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- TOUR TYPES SECTION -->
+        <section class="tour-types">
+          <div class="container">
+            <div class="tour-type-content">
+                <span class="blue-text">Tour Types</span>
+                <h2>Adventure & Activity</h2>
+                <p>
+                    Explore thrilling destinations that will get your heart racing. From rugged mountains
+                    to dense jungles, embark on unforgettable journeys that will test your limits and 
+                    create lasting memories. Dive into the unknown, conquer nature's challenges, and 
+                    write your own epic tale of adventure.
+                </p>
+            </div>
+
+            <div class="tour-type-items">
+                <div class="tour-type-box">
+                    <img class="tour-type-img" src="./assets/images/camping.png" alt="camping">
+                    <span class="tour-type-title">Camping</span>
+                    <p class="tour-type-details">
+                        13 nature escapes, tents, RVs, cabins, outdoor experiences
+                    </p>
+                </div>
+
+                <div class="tour-type-box">
+                    <img class="tour-type-img" src="./assets/images/tend.png" alt="camping">
+                    <span class="tour-type-title">Trekking</span>
+                    <p class="tour-type-details">
+                        Breathtaking landscapes, hidden trails, remote villages, natural beauty
+                    </p>
+                </div>
+
+                <div class="tour-type-box">
+                    <img class="tour-type-img" src="./assets/images/fire.png" alt="camping">
+                    <span class="tour-type-title">Camp Fire</span>
+                    <p class="tour-type-details">
+                        7 unique destinations, marshmallow roasting, nature connection
+                    </p>
+                </div>
+
+                <div class="tour-type-box">
+                    <img class="tour-type-img" src="./assets/images/map.png" alt="camping">
+                    <span class="tour-type-title">Exploring</span>
+                    <p class="tour-type-details">
+                        25 diverse destinations, historical cities, hidden gems, unique charm
+                    </p>
+                </div>
+          
+            </div>
+            </div>
+        </section>
+
+        <!-- POPULAR DESTINATIONS -->
+        <section class="where-to-go">
+            <div class="container">
+            <div class="where-to-go-content">
+                <span class="blue-text">Where to go</span>
+                <h2>Popular destinations</h2>
+                <p>
+                    Explore our curated selection of the world's most sought-after travel spots in this
+                    diverse list of must-visit places. From iconic cities to pristine natural wonders, 
+                    we've gathered the best destinations to ignite your wanderlust.
+                </p>
+            </div>
+
+            <div class="cards">
+                <div class="card no-1">
+                    <img src="./assets/images/cairo.png" alt="Cairo">
+
+                    <div class="card-info">
+                        <h3>Cairo</h3>
+                        <span>Egypt</span>
+                        <p>Price starts at <span class="blue-text">€105.00</span></p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="card no-2">
+                    <img src="./assets/images/paris.png" alt="Paris">
+
+                    <div class="card-info">
+                        <h3>Paris</h3>
+                        <span>France</span>
+                        <p>Price starts at <span class="blue-text">€95.00</span></p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="card no-3">
+                    <img src="./assets/images/rome.png" alt="Rome">
+
+                    <div class="card-info">
+                        <h3>Rome</h3>
+                        <span>Italy</span>
+                        <p>Price starts at <span class="blue-text">€75.00</span></p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="card no-4">
+                    <img src="./assets/images/madrid.png" alt="Madrid">
+
+                    <div class="card-info">
+                        <h3>Madrid</h3>
+                        <span>Spain</span>
+                        <p>Price starts at <span class="blue-text">€82.00</span></p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        </section>
+
+      <!-- NEWS & BLOG -->
+        <section class="exploring">
+            <div class="exploring-content">
+                <span class="blue-text">Exploring</span>
+                <h2>News and Blog</h2>
+            </div>
+
+            <div class="blog-container">
+                <div class="main-blog">
+                    <img src="./assets/images/news1.png" alt="Kyoto">
+                    <div class="main-blog-info">
+                        <span class="tag">Asia</span>
+                        <h3>Unveiling the Enchanting Beauty of Kyoto</h3>
+                        <p>
+                            Join us on a virtual journey to one of Japan's most captivating cities – <b>Kyoto</b>. In our latest blog post, we'll immerse you in the mesmerizing world of ancient temples, tranquil gardens, and the timeless traditions that define this cultural gem.
+                        </p>
+                    </div>
+                   <a class="read-more" href="#">
+                        Read full article <span class="arrow">→</span>
+                   </a>
+
+                </div>
+
+                <div class="side-blogs">
+        
+                    <div class="side-post">
+                        <img src="./assets/images/news2.png" alt="">
+                        <div class="side-post-details">
+                            <p>Exploring the Enigmatic Wonders of Southeast Asia: A Journey of Discovery Through Ancient Temples and Lush Jungles</p>
+                            <span class="date">19 SEPT 2023</span>
+                        </div>
+                    </div>
+        
+                    <div class="side-post">
+                        <img src="./assets/images/news3.png" alt="">
+                        <div class="side-post-details">
+                            <p>Epic Adventures: From Machu Picchu to the Amazon Rainforest - Exploring the Heart of South America's Natural Beauty and Cultural Riches</p>
+                            <span class="date">10 MAY 2023</span>
+                        </div>
+                    </div>
+        
+                    <div class="side-post">
+                        <img src="./assets/images/news4.png" alt="">
+                        <div class="side-post-details">
+                            <p>Chasing Sunsets: A Journey through Europe's Most Romantic Cities - Unveiling the Allure of Historic Charm and Modern Elegance</p>
+                            <span class="date">20 JUL 2023</span>
+                        </div>
+                    </div>
+        
+                    <div class="side-post">
+                        <img src="./assets/images/news5.png" alt="">
+                        <div class="side-post-details">
+                            <p>Off the Beaten Path: Uncovering Hidden Gems in South America - From Remote Villages to Pristine Wilderness, the Ultimate Exploration</p>
+                            <span class="date">15 JUN 2023</span>
+                        </div>
+                    </div>
+
+                    <a class="read-more" href="#">
+                        Read more articles <span class="arrow">→</span>
+                   </a>
+        
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- BEST OFFERS -->
+        <section class="best-offers">
+            <div class="container">
+            <div class="best-offers-content">
+                <span class="blue-text">Best Offers</span>
+                <h2>Top Deals and Discounts</h2>
+            </div>
+            <div class="best-offers-cards">
+                <div class="offers-row-1">
+                    <div class="offer-card offer-1">
+                        <img src="./assets/images/offer1.png" alt="">
+                        <div class="offer-details">
+                            <p>Holidays Suites Navona - ITALY</p>
+                            <p><span class="offer-price">€149,00</span> Price stars from</p>
+                        </div>
+                    </div>
+
+                    <div class="offer-card offer-2">
+                        <img src="./assets/images/offer2.png" alt="">
+                        <div class="offer-details">
+                            <p>Holidays Suites Navona - ITALY</p>
+                            <p><span class="offer-price">€149,00</span> Price stars from</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-row-2">
+                    <div class="offer-card offer-2">
+                        <img src="./assets/images/offer3.png" alt="">
+                        <div class="offer-details">
+                            <p>NH Madrid Zurbano - MADRID</p>
+                            <p><span class="offer-price">€89,00</span> Price stars from</p>
+                        </div>
+                    </div>
+                    <div class="offer-card offer-2">
+                        <img src="./assets/images/offer4.png" alt="">
+                        <div class="offer-details">
+                            <p>Royal Plaza Hotel - HONG KONG</p>
+                            <p><span class="offer-price">€89,00</span> Price stars from</p>
+                        </div>
+                    </div>
+                    <div class="offer-card offer-2">
+                        <img src="./assets/images/offer5.png" alt="">
+                        <div class="offer-details">
+                            <p>Le Meridien - ABU DHABI</p>
+                            <p><span class="offer-price">€109,00</span> Price stars from</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HAPPY CLIENTS -->
+        <section class="happy-clients">
+            <div class="happy-clients-content">
+                <span class="small-line"></span>
+                <h2>Happy Client Stories</h2>
+            </div>
+            <div class="clients-review">
+                <div class="client">
+                    <img src="./assets/images/customer1.png" alt="">
+                    <p>“Sarah, a local resident, possesses a profound connection to this region. Having once served as a host, she intimately comprehends the significance of having someone dedicated to managing every intricate detail, ensuring a seamless experience for all.”</p>
+                    <div class="stars-row">
+                       <div class="stars">★★★★★</div>
+                       <span class="rating-value">5/5</span>
+                    </div>
+                    <div class="client-info">
+                        <p>Isabel Rose</p>
+                        <span>Manager</span>
+                    </div>
+                </div>
+                <div class="client no-2">
+                    <img src="./assets/images/customer2.png" alt="">
+                    <p>“Liam, born and raised in this locale, has an innate connection to the area. With a background as a host himself, he fully appreciates the necessity of having someone who can attend to all the small but essential aspects, making every moment memorable.”</p>
+                    <div class="stars-row">
+                      <div class="stars">
+                          <span class="yellow">★★★★</span><span class="gray">★</span>
+                      </div>
+                        <span class="rating-value">4/5</span>
+                    </div>
+                    <div class="client-info">
+                        <p>Oliver Mitchell</p>
+                        <span>Landscape Architect</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="help">
+                <h4>NEED ANY HELP?</h4>
+                <div class="contact">
+                    <p>Call 24/7 for any help</p>
+                    <span>+00 123 456 789</span>
+                </div>
+                <div class="contact">
+                    <p>CMail to our support team</p>
+                    <span>support@domain.com</span>
+                </div>
+                <div class="contact">
+                    <p>Follow us on</p>
+                    <div class="medias">
+                        <img src="./assets/images/facebook.png" alt="">
+                        <img src="./assets/images/instagram.png" alt="">
+                        <img src="./assets/images/twitter.png" alt="">
+                        <img src="./assets/images/youtube.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="company">
+                <h4>COMPANY</h4>
+                <div class="footer-menu">
+                    <a href="#">About Us</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Rewards</a>
+                    <a href="#">Work with Us</a>
+                    <a href="#">Meet the Team</a>
+                    <a href="#">Blog</a>
+                </div>
+
+            </div>
+            <div class="support">
+                <h4>SUPPORT</h4>
+                <div class="footer-menu">
+                    <a href="#">Account</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Affiliate Program</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="services">
+                <h4>SERVICES</h4>
+                <div class="footer-menu">
+                     <a href="#">Community Program</a>
+                     <a href="#">Investor Relations</a>
+                     <a href="#">Rewards Program</a>
+                     <a href="#">Points Plus</a>
+                     <a href="#">Partners</a>
+                     <a href="#">List My Hotel</a>
+                </div>
+            </div>
+            <div class="cities">
+                <h4>TOP CITIES</h4>
+                <div class="footer-menu">
+                    <a href="#">Rome</a>
+                    <a href="#">Madrid</a>
+                    <a href="#">New York</a>
+                    <a href="#">Hong Kong</a>
+                    <a href="#">Paris</a>
+                    <a href="#">Tokyo</a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright © 2023 Kunturi Design</p>
+             <img class="footer-logo-desktop" src="./assets/images/logo2.png" alt="">
+             <img class="footer-logo-mobile" src="./assets/images/logo.png" alt="">
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
