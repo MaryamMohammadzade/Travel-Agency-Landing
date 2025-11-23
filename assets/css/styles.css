@@ -4,7 +4,6 @@ body {
 	margin: 0%;
 }
 
-
 a,
 span,
 p {
@@ -18,7 +17,7 @@ main {
 	margin-top: -120px;
 }
 
-/* Header */
+/* 1-) Header */
 .header {
 
 	display: flex;
@@ -44,7 +43,29 @@ main {
 	text-decoration: none;
 }
 
-/* 1-) Hero-Section */
+.header-menu a:hover {
+	color: #17C3B2;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+
+/* 2-) Hero-Section */
 .hero-section {
 	background-image: url("../images/hero-image-background.png");
 	background-size: cover;
@@ -79,7 +100,7 @@ main {
 	line-height: 150%;
 }
 
-/* 2-) Plan-Travel */
+/* 3-) Plan-Travel */
 .plan-travel {
 	width: 100%;
 	min-height: 254px;
@@ -129,7 +150,7 @@ main {
 	text-align: center;
 }
 
-/* 3-) Tour-Types */
+/* 4-) Tour-Types */
 .tour-types {
 	background-color: #17C3B2;
 
@@ -188,11 +209,21 @@ main {
 	font-weight: 400;
 	max-width: 252px;
 	padding: 8px 16px;
-
-
 }
 
-/* 4-) Where-To-Go */
+	.right-arrow, .left-arrow{
+        max-width: 40px;
+        max-height: 40px;
+	}
+
+	.left-arrow{
+		margin-left: -40px;
+	}
+		.right-arrow{
+		margin-right: -40px;
+	}
+
+/* 5-) Where-To-Go */
 
 .where-to-go,
 .exploring,
@@ -231,23 +262,15 @@ main {
 .cards {
 	position: relative;
 	margin-top: 56px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
 	padding-bottom: 58px;
-}
-
-
-/* Cards */
-.cards {
 	margin-top: 56px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 30px;
-	padding-bottom: 58px;
+	display: flex;
+	align-items: center;
 }
 
 .card {
+	flex: 1;
 	border-radius: 16px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 	background: #fff;
@@ -282,7 +305,7 @@ main {
 	color: #17C3B2;
 }
 
-/* BLOG */
+/* 6-) BLOG */
 .exploring-content,
 .best-offers-content,
 .happy-clients-content {
@@ -360,7 +383,7 @@ main {
 	color: #17C3B2;
 }
 
-/* OFFERS */
+/* 7-) OFFERS */
 .best-offers {
 	padding-bottom: 130px;
 }
@@ -407,7 +430,7 @@ main {
 	padding-left: 28px;
 }
 
-/* HAPPY CLIENTS */
+/* 8-) HAPPY CLIENTS */
 .clients-review {
 	display: flex;
 	justify-content: space-between;
@@ -420,27 +443,21 @@ main {
 	gap: 15px;
 	align-items: center;
 	justify-content: center;
-	max-width: 500px;
+	max-width: 509px;
 	background-image: url("./assets/images/bg.png");
 	text-align: center;
-}
-
-.clients-review {
-	display: flex;
-	gap: 30px;
-	padding-bottom: 20px;
-}
-
-.client {
-	min-width: 45%;
 	padding: 25px;
 	background-image: url("../images/bg.png");
 	background-repeat: no-repeat;
 	background-position: left 20px top 90px;
 	scroll-snap-align: start;
-	display: flex;
-	flex-direction: column;
+}
 
+.clients-review {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	padding-bottom: 20px;
 }
 
 .client img {
@@ -516,7 +533,7 @@ main {
 }
 
 
-/*footer*/
+/* 9-) FOOTER*/
 footer {
 	padding: 64px 200px 0px 200px;
 }
@@ -593,7 +610,7 @@ footer {
 	display: none;
 }
 
-/* GENERAL*/
+/* 10-) GENERAL*/
 
 .tour-types h2::before,
 .where-to-go h2::before,
@@ -647,9 +664,11 @@ footer {
 		gap: 30px;
 	}
 
+
 	.content {
 		max-width: 70%;
 		padding: 180px 40px 0 0;
+
 	}
 
 	.content h1 {
@@ -685,6 +704,18 @@ footer {
 	.offers-row-2 {
 		grid-template-columns: 1fr 1fr;
 	}
+    
+	.offer-details{
+		margin-top: -70px;
+	}
+
+	.offer-details p {
+		font-size: 14px;
+	}
+
+	.offer-price {
+		font-size: 14px;
+	}
 
 	.clients-review {
 		flex-direction: column;
@@ -699,6 +730,11 @@ footer {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
 	}
+
+	.right-arrow, .left-arrow{
+        display: none;
+	}
+
 }
 
 /* Mobile (max-width: 768px)*/
@@ -710,6 +746,11 @@ footer {
 	.header-menu {
 		display: none;
 	}
+
+  .hamburger {
+    display: block;
+    z-index: 30;
+  }
 
 	.content {
 		max-width: 100%;
@@ -744,6 +785,7 @@ footer {
 
 	.btn-submit {
 		width: 100%;
+		cursor: pointer;
 	}
 
 	.tour-types {
@@ -764,7 +806,6 @@ footer {
 		grid-template-columns: 1fr;
 	}
 
-	/* BLOG */
 	.blog-container {
 		grid-template-columns: 1fr;
 		gap: 40px;
@@ -796,6 +837,7 @@ footer {
 
 	.clients-review {
 		flex-direction: column;
+
 		gap: 20px;
 	}
 
@@ -885,26 +927,28 @@ footer {
 	.offer-card {
 		margin-bottom: 30px;
 	}
-}
 
-.where-to-go h2,
-.exploring h2,
-.best-offers h2,
-.happy-clients h2 {
-	font-size: 35px;
-}
 
-.side-post-details>p {
-	font-size: 15px;
-}
+    .where-to-go h2,
+    .exploring h2,
+    .best-offers h2,
+    .happy-clients h2 {
+    	font-size: 35px;
+    }
 
-.exploring-content>span,
-.best-offers-content>span,
-.happy-clients-content>span {
-	font-size: 20px;
+    .side-post-details>p {
+    	font-size: 15px;
+    }
+
+    .exploring-content>span,
+    .best-offers-content>span,
+    .happy-clients-content>span {
+    	font-size: 20px;
+    }
 }
 
 /* Small Mobile (max-width: 480px) */
+
 @media (max-width: 480px) {
 
 	.best-offers,
@@ -919,6 +963,10 @@ footer {
 
 	.offer-details {
 		margin-top: -80px;
+	}
+    
+	.content{
+		margin-bottom: 40px;
 	}
 
 	.content h1 {
